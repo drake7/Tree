@@ -4,6 +4,7 @@ public class BinaryTreeApp {
 	{
 		
 		BinaryTree t=new BinaryTree();
+		SumOfAllNodes sum=new SumOfAllNodes();
 		
 		Node root=t.createNewNode(5);
 		root.left=t.createNewNode(7);
@@ -12,12 +13,17 @@ public class BinaryTreeApp {
 		root.left.right=t.createNewNode(25);	
 		
 		Traversal traverse=new Traversal();
+		DifferenceBetweenEvenOddLevel diff=new DifferenceBetweenEvenOddLevel();
 	//	traverse.inorder(root);
 		
 	//	traverse.preorder(root);
 		
-		traverse.postorder(root);
+	//	traverse.postorder(root);
 		
+	//	System.out.println(sum.sumOfBinaryTree(root));
+		
+		System.out.println(diff.differenceBetweenOddEven(root));
+		System.out.println(diff.nodesCount(root));
 	}
 
 }
