@@ -24,6 +24,9 @@ public class BinaryTreeApp {
 		
 		System.out.println(diff.differenceBetweenOddEven(root));
 		System.out.println(diff.nodesCount(root));
+		
+		
+		
 	}
 
 }
