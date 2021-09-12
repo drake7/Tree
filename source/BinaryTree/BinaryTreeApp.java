@@ -13,7 +13,9 @@ public class BinaryTreeApp {
 		root.left.right=t.createNewNode(25);	
 		
 		Traversal traverse=new Traversal();
+		FindCountOfLeafNodes fcl=new FindCountOfLeafNodes();
 		DifferenceBetweenEvenOddLevel diff=new DifferenceBetweenEvenOddLevel();
+		HeightOfBinaryTree height=new HeightOfBinaryTree();
 	//	traverse.inorder(root);
 		
 	//	traverse.preorder(root);
@@ -22,9 +24,12 @@ public class BinaryTreeApp {
 		
 	//	System.out.println(sum.sumOfBinaryTree(root));
 		
-		System.out.println(diff.differenceBetweenOddEven(root));
-		System.out.println(diff.nodesCount(root));
+	//	System.out.println(diff.differenceBetweenOddEven(root));
+	//	System.out.println(diff.nodesCount(root));
+	//	System.out.println(fcl.Count(root) );
 		
+		
+		System.out.println(height.height(root));
 		
 		
 	}
