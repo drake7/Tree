@@ -29,8 +29,9 @@ public class BinaryTreeApp {
 	//	System.out.println(fcl.Count(root) );
 		
 		
-		System.out.println(height.height(root));
+	//	System.out.println(height.height(root));
 		
+		height.printElemenetAtGivenLevel(root, 2);
 		
 	}
 
