@@ -12,11 +12,15 @@ public class BinaryTreeApp {
 		root.right=t.createNewNode(11);
 		root.left.right=t.createNewNode(25);	
 		
-		Traversal traverse=new Traversal();
-		FindCountOfLeafNodes fcl=new FindCountOfLeafNodes();
-		DifferenceBetweenEvenOddLevel diff=new DifferenceBetweenEvenOddLevel();
-		HeightOfBinaryTree height=new HeightOfBinaryTree();
+	//	Traversal traverse=new Traversal();
+	//	FindCountOfLeafNodes fcl=new FindCountOfLeafNodes();
+	//	DifferenceBetweenEvenOddLevel diff=new DifferenceBetweenEvenOddLevel();
+	//	HeightOfBinaryTree height=new HeightOfBinaryTree();
+		
+		BreadthFirstSearch bfs=new BreadthFirstSearch();
 	//	traverse.inorder(root);
+		
+		
 		
 	//	traverse.preorder(root);
 		
@@ -31,8 +35,8 @@ public class BinaryTreeApp {
 		
 	//	System.out.println(height.height(root));
 		
-		height.printElemenetAtGivenLevel(root, 2);
-		
+	//	height.printElemenetAtGivenLevel(root, 2);
+		bfs.printLevelOrder(root);
 	}
 
 }
