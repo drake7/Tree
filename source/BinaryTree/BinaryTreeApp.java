@@ -36,7 +36,8 @@ public class BinaryTreeApp {
 	//	System.out.println(height.height(root));
 		
 	//	height.printElemenetAtGivenLevel(root, 2);
-		bfs.printLevelOrder(root);
+	//	bfs.printLevelOrder(root);
+		System.out.println(bfs.SearchNode(root, 5131));
 	}
 
 }
