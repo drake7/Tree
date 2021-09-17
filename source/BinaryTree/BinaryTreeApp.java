@@ -39,8 +39,8 @@ public class BinaryTreeApp {
 	//	height.printElemenetAtGivenLevel(root, 2);
 	//	bfs.printLevelOrder(root);
 	//	System.out.println(bfs.SearchNode(root, 5131));
-		in.insert(root, 12312);
-		traverse.inorder(root);
+	//	in.insert(root, 12312);
+	//	traverse.inorder(root);
 		
 	}
 
