@@ -19,6 +19,7 @@ public class BinaryTreeApp {
 		
 		BreadthFirstSearch bfs=new BreadthFirstSearch();
 		Insertion in=new Insertion();
+		DeletionOfNode del=new DeletionOfNode();
 	//	traverse.inorder(root);
 		
 		
@@ -40,8 +41,10 @@ public class BinaryTreeApp {
 	//	bfs.printLevelOrder(root);
 	//	System.out.println(bfs.SearchNode(root, 5131));
 	//	in.insert(root, 12312);
-	//	traverse.inorder(root);
-		
+		traverse.inorder(root );
+		del.Delete(root, 51);
+		System.out.println();
+		traverse.inorder(root );
 	}
 
 }

@@ -9,7 +9,7 @@ public class Traversal {
 			return;
 		
 		inorder(node.left);
-		System.out.println(node.data+" ");
+		System.out.print(node.data+" ");
 		inorder(node.right);
 	}
 
@@ -18,7 +18,7 @@ public class Traversal {
 		if(node==null)
 		return;
 		
-		System.out.println(node.data + " ");
+		System.out.print(node.data + " ");
 		preorder(node.left);
 		preorder(node.right);
 	}
@@ -32,7 +32,7 @@ public class Traversal {
 		
 		postorder(node.left);
 		postorder(node.right);
-		System.out.println(node.data + " ");
+		System.out.print(node.data + " ");
 	}
 	
 	
