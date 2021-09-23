@@ -90,5 +90,11 @@ public class BinarySearchTree {
 
      // print inorder traversal of the BST
      tree.inorder();
+	
+	Insertion ins=new Insertion();
+	System.out.println("////");
+	ins.insertNode(tree.root, 110);
+	
+	tree.inorder();
 	}	
 }
