@@ -2,26 +2,27 @@ package binarySearchTree;
 
 public class Insertion {
 	
-	public void insertNode(Node root,int data)
+	public Node insertNode(Node root,int data)
 	{
 		
 		if(root==null) {
+			System.out.println("root null"+data);
 			root=new Node(data);
-		return;
+		return root;
 		}
 		if(root.key>=data)
 		{
 			System.out.println("left"+root.key);
-			insertNode(root.left,data);
+			root.left=insertNode(root.left,data);
 		}
 		else if(root.key<data)
 		{
 			System.out.println("right"+root.key);
 			
-			insertNode(root.right,data);
+			root.right=insertNode(root.right,data);
 		}
 		
-		return;
+		return root;
 		
 	}
 
