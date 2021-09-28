@@ -100,6 +100,7 @@ public class BinarySearchTree {
      
      NodeWithMinValue min=new NodeWithMinValue();
      System.out.println(min.minNode(root));
+     System.out.println(min.isBST(root));
      
 	}	
 }
