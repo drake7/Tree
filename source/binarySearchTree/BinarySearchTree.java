@@ -17,7 +17,7 @@ left=right=null;
 }
 public class BinarySearchTree {
 	
-	Node root;
+	static Node root;
 	
 	public BinarySearchTree() {
 		// TODO Auto-generated constructor stub
@@ -83,18 +83,23 @@ public class BinarySearchTree {
      tree.insert(50);
      tree.insert(30);
      tree.insert(20);
+     tree.insert(1);
      tree.insert(40);
      tree.insert(70);
      tree.insert(60);
      tree.insert(80);
 
      // print inorder traversal of the BST
-     tree.inorder();
+  //   tree.inorder();
 	
-	Insertion ins=new Insertion();
-	System.out.println("////");
-	ins.insertNode(tree.root, 110);
+//	Insertion ins=new Insertion();
+//	System.out.println("////");
+//	ins.insertNode(tree.root, 110);
 	
-	tree.inorder();
+//	tree.inorder();
+     
+     NodeWithMinValue min=new NodeWithMinValue();
+     System.out.println(min.minNode(root));
+     
 	}	
 }
